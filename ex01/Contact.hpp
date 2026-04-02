@@ -6,7 +6,7 @@
 /*   By: pcaplat <pcaplat@42angouleme.fr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/02 09:49:23 by pcaplat           #+#    #+#             */
-/*   Updated: 2026/04/02 11:10:12 by pcaplat          ###   ########.fr       */
+/*   Updated: 2026/04/02 11:21:27 by pcaplat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,4 +36,5 @@ public:
 	void		setContact(std::string firstName, std::string lastName, std::string nickname,
 					std::string phoneNumber, std::string secret);
 	void		display(void);
+	bool		isEmpty(void);
 };

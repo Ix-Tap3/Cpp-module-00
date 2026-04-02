@@ -6,7 +6,7 @@
 /*   By: pcaplat <pcaplat@42angouleme.fr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/02 10:23:10 by pcaplat           #+#    #+#             */
-/*   Updated: 2026/04/02 11:11:45 by pcaplat          ###   ########.fr       */
+/*   Updated: 2026/04/02 11:23:23 by pcaplat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,4 +42,19 @@ void	Contact::display(void)
 	std::cout << _nickname << std::endl;
 	std::cout << _phone << std::endl;
 	std::cout << _secret << std::endl;
+}
+
+bool	Contact::isEmpty(void)
+{
+	if (_firstName.empty())
+		return (true);
+	if (_lastName.empty())
+		return (true);
+	if (_nickname.empty())
+		return (true);
+	if (_phone.empty())
+		return (true);
+	if (_secret.empty())
+		return (true);
+	return (false);
 }
