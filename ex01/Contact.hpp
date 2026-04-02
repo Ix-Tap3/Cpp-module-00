@@ -6,7 +6,7 @@
 /*   By: pcaplat <pcaplat@42angouleme.fr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/02 09:49:23 by pcaplat           #+#    #+#             */
-/*   Updated: 2026/04/02 10:41:51 by pcaplat          ###   ########.fr       */
+/*   Updated: 2026/04/02 11:10:12 by pcaplat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ public:
 	std::string	getNickname(void);
 	std::string	getPhoneNumber(void);
 	std::string	getSecret(void);
-	void		display(Contact &contact);
-	Contact		newContact(std::string firstName, std::string lastName, std::string nickname,
+	void		setContact(std::string firstName, std::string lastName, std::string nickname,
 					std::string phoneNumber, std::string secret);
+	void		display(void);
 };
