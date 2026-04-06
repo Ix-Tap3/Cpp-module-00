@@ -6,7 +6,7 @@
 /*   By: pcaplat <pcaplat@42angouleme.fr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/02 09:47:16 by pcaplat           #+#    #+#             */
-/*   Updated: 2026/04/06 16:34:03 by pcaplat          ###   ########.fr       */
+/*   Updated: 2026/04/06 16:47:22 by pcaplat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ private:
 
 public:
 	void	add(void);
-	void	search(std::string name);
+	void	search(void);
 	void	exit(void);
 	void	setNbContact(int nb_contact);
 	void	displayContact(int index);

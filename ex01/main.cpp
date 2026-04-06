@@ -6,7 +6,7 @@
 /*   By: pcaplat <pcaplat@42angouleme.fr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/02 10:47:46 by pcaplat           #+#    #+#             */
-/*   Updated: 2026/04/06 16:36:08 by pcaplat          ###   ########.fr       */
+/*   Updated: 2026/04/06 17:00:59 by pcaplat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int	main(void)
 		else if (input == "ADD")
 			phonebook.add();
 		else if (input == "SEARCH")
-			phonebook.displayContact(0);
+			phonebook.search();
 		else if (input == "EXIT")
 			break ;
 	}
