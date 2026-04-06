@@ -6,7 +6,7 @@
 /*   By: pcaplat <pcaplat@42angouleme.fr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/02 10:23:10 by pcaplat           #+#    #+#             */
-/*   Updated: 2026/04/06 16:00:10 by pcaplat          ###   ########.fr       */
+/*   Updated: 2026/04/06 19:15:46 by pcaplat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,11 +37,11 @@ void	Contact::setContact(std::string firstName, std::string lastName, std::strin
 
 void	Contact::display(void)
 {
-	std::cout << _firstName << std::endl;
-	std::cout << _lastName << std::endl;
-	std::cout << _nickname << std::endl;
-	std::cout << _phone << std::endl;
-	std::cout << _secret << std::endl;
+	std::cout << "First Name: " << _firstName << std::endl;
+	std::cout << "Last Name: " << _lastName << std::endl;
+	std::cout << "Nickname: " << _nickname << std::endl;
+	std::cout << "Phone Number: " << _phone << std::endl;
+	std::cout << "Darkest Secret: " << _secret << std::endl;
 }
 
 bool	Contact::isEmpty(void)
