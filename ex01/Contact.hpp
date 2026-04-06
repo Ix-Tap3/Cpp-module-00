@@ -6,7 +6,7 @@
 /*   By: pcaplat <pcaplat@42angouleme.fr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/02 09:49:23 by pcaplat           #+#    #+#             */
-/*   Updated: 2026/04/02 11:21:27 by pcaplat          ###   ########.fr       */
+/*   Updated: 2026/04/06 15:59:23 by pcaplat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,11 +21,6 @@ private:
 	std::string	_nickname;
 	std::string	_phone;
 	std::string	_secret;
-	void	setFirstName(std::string name);
-	void	setLastName(std::string name);
-	void	setNickname(std::string nickname);
-	void	setPhoneNumber(std::string phone_number);
-	void	setSecret(std::string secret);
 
 public:
 	std::string	getFirstName(void);
@@ -37,4 +32,9 @@ public:
 					std::string phoneNumber, std::string secret);
 	void		display(void);
 	bool		isEmpty(void);
+	void		setFirstName(std::string name);
+	void		setLastName(std::string name);
+	void		setNickname(std::string nickname);
+	void		setPhoneNumber(std::string phone_number);
+	void		setSecret(std::string secret);
 };

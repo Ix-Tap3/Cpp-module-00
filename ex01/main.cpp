@@ -6,29 +6,31 @@
 /*   By: pcaplat <pcaplat@42angouleme.fr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/02 10:47:46 by pcaplat           #+#    #+#             */
-/*   Updated: 2026/04/02 11:26:08 by pcaplat          ###   ########.fr       */
+/*   Updated: 2026/04/06 16:36:08 by pcaplat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "PhoneBook.hpp"
-#include "Contact.hpp"
 #include <iostream>
+#include <string>
 
-int	main(int ac, char **av)
+int	main(void)
 {
-	Contact	test;
-	Contact	t2;
+	PhoneBook	phonebook;
+	std::string	input;
 
-	(void)ac;
-	(void)av;
-	test.setContact("Jonh", "Doe", "Inconito", "36 43", "Love birds (roasted birds...)");
-	test.display();
-	if (t2.isEmpty())
-		std::cout << "Empty contact" << std::endl;
-	else
-		std::cout << "not empty" << std::endl;
-	if (test.isEmpty())
-		std::cout << "Empty contact" << std::endl;
-	else
-		std::cout << "not empty" << std::endl;
+	phonebook.setNbContact(0);
+	while (1)
+	{
+		std::cout << "Enter a command: (ADD, SEARCH, EXIT)" << std::endl;
+		std::getline(std::cin, input);
+		if (input.empty() || std::cin.eof())
+			std::cout << "Invalid empty command." << std::endl;
+		else if (input == "ADD")
+			phonebook.add();
+		else if (input == "SEARCH")
+			phonebook.displayContact(0);
+		else if (input == "EXIT")
+			break ;
+	}
 }

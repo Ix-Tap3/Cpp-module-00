@@ -6,7 +6,7 @@
 /*   By: pcaplat <pcaplat@42angouleme.fr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/02 09:47:16 by pcaplat           #+#    #+#             */
-/*   Updated: 2026/04/02 11:15:41 by pcaplat          ###   ########.fr       */
+/*   Updated: 2026/04/06 16:34:03 by pcaplat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,13 @@
 class	PhoneBook
 {
 private:
-	Contact	contacts[8];
+	Contact	_contacts[8];
+	int		_nb_contact;
 
 public:
-	void	add(Contact &contact);
+	void	add(void);
 	void	search(std::string name);
 	void	exit(void);
+	void	setNbContact(int nb_contact);
+	void	displayContact(int index);
 };
