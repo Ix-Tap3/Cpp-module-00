@@ -6,7 +6,7 @@
 /*   By: pcaplat <pcaplat@42angouleme.fr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/02 10:47:46 by pcaplat           #+#    #+#             */
-/*   Updated: 2026/04/06 17:00:59 by pcaplat          ###   ########.fr       */
+/*   Updated: 2026/04/16 15:50:20 by pcaplat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,9 +22,11 @@ int	main(void)
 	phonebook.setNbContact(0);
 	while (1)
 	{
+		if (std::cin.eof())
+			return (1);
 		std::cout << "Enter a command: (ADD, SEARCH, EXIT)" << std::endl;
 		std::getline(std::cin, input);
-		if (input.empty() || std::cin.eof())
+		if (input.empty())
 			std::cout << "Invalid empty command." << std::endl;
 		else if (input == "ADD")
 			phonebook.add();
