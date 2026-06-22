@@ -5,34 +5,32 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: pcaplat <pcaplat@42angouleme.fr>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/02 09:30:41 by pcaplat           #+#    #+#             */
-/*   Updated: 2026/04/02 09:36:22 by pcaplat          ###   ########.fr       */
+/*   Created: 2026/06/22 10:38:21 by pcaplat           #+#    #+#             */
+/*   Updated: 2026/06/22 10:54:47 by pcaplat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
-#include <cctype>
+#include <string>
 
 int	main(int ac, char **av)
 {
-	int	i;
-	int	j;
+	std::string				str;
+	std::string::iterator	it;
+	int						j;
 
 	if (ac == 1)
 	{
 		std::cout << "* LOUD AND UNBEARABLE FEEDBACK NOISE *" << std::endl;
 		return (1);
 	}
-	i = 1;
-	while (av[i])
+	j = 1;
+	while (av[j])
 	{
-		j = 0;
-		while (av[i][j])
-		{
-			std::cout << (char)std::toupper(av[i][j]);
-			j++;
-		}
-		i++;
+		str = av[j];
+		for (it = str.begin(); it != str.end(); it++)
+			std::cout << (char)std::toupper(*it);
+		j++;
 	}
 	std::cout << std::endl;
 }
